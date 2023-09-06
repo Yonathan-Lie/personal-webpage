@@ -5,41 +5,22 @@ export default function Hero() {
     return (
         <div className="container h-screen bg-secondary">
             <div className="flex flex-col w-full h-full items-center justify-center">
-                <div className={"flex flex-row w-full justify-center flex-wrap"}>
-                    <div className={"border w-3/5 text-end p-6"}>nama dll
-                        <br/>
-                        <br/>
-                        <br/>
-                    </div>
-                    <div className={"border text-center w-2/5 p-6 "}>
-                        <div className={"border m-0 p-0"} style={{
-                            borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
-                            height: "auto",
-                            aspectRatio: 1,
-                            objectFit: "contain",
-                            position: "relative",
-                            overflow: "clip",
-                        }}>
-                            <Image
-                                src="https://placehold.co/600x400.png" // Replace with your image source
-                                alt="Square Image"
-                                fill
-                                objectFit="cover"
-                                className={"child"}
-                            />
+                <div className={"flex flex-row w-full justify-center flex-wrap rounded-lg border shadow-lg"}>
+                    <div className={"text-center md:w-2/5 w-full p-6 flex justify-center items-center"}>
+                        <div className="aspect-square relative w-full h-full border rounded-full ">
+                            <Image src={"/example_image1.png"} alt={"profile photo"} fill
+                                   className={"object-cover rounded-full "} style={{}}/>
                         </div>
                     </div>
+                    <div className={"border-l md:w-3/5 w-full p-6"}>
+                        <h1>I&#39;m A Programmer</h1>
+                        <p>Hi, I&#39;m Yonathan. Physics graduate turned front-end developer with a passion for creating
+                            beautiful and user-friendly web applications.
+                        </p>
+                    </div>
                 </div>
-                <div className={"border w-full px-6"}>stack</div>
             </div>
-
-            {/*<div className="card lg:card-side bg-base-100 shadow-xl">*/}
-            {/*    <figure><img src="https://placehold.co/300x300" alt="Album"/></figure>*/}
-            {/*    <div className="card-body">*/}
-            {/*        <h2 className="card-title">New album is released!</h2>*/}
-            {/*        <p>Click the button to listen on Spotiwhy app.</p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className={"border w-full px-6"}>stack</div>
         </div>
     )
 }
