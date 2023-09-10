@@ -1,5 +1,7 @@
 export default function MyFooter(){
     return(
-        <div></div>
+        <div className={"bg-[#2d2e32] w-full"}>
+            <div className="container"></div>
+        </div>
     )
 }
