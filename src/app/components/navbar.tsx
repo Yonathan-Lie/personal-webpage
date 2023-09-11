@@ -1,6 +1,6 @@
 export default function MyNavbar(){
     return(
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 fixed z-[1000]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -12,13 +12,15 @@ export default function MyNavbar(){
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-xl">Yonathan.dev</a>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                    <li><a>Item 3</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Project</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Contact</a></li>
                 </ul>
             </div>
 
