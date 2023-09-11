@@ -1,25 +1,17 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
-export default function Projects() {
 
-    const project = [
+export default function Porto() {
+
+    const porto = [
         {
             image: "/example_image1.png",
-            alt: "Photomatics",
-            tag: "Photomatics.id",
+            tag: "Profile Web",
+            alt: "Profile Web",
             desc: "descrpition of ",
-            stack: ["NextJS", "Bootstrap"],
-            repo: "ceritanya repo",
-            redirtag: "acikiwir",
-            redirect: "#"
-        }, {
-            image: "/example_image1.png",
-            alt: "Pulih",
-            tag: "PULIH",
-            desc: "descrpition of ",
-            stack: ["NextJS", "Bootstrap"],
+            stack: ["NextJS", "Tailwind"],
             repo: "ceritanya repo",
             redirtag: "acikiwir",
             redirect: "#"
@@ -31,26 +23,22 @@ export default function Projects() {
             <div className="container h-screen">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <div className={"w-full text-start my-4"}>
-                        <h3>Project</h3>
-                        <h2>something here</h2>
+                        <h3>Portfolio</h3>
+                        <h2>A way to show different skills and ideas</h2>
                     </div>
-                    {project.map((projectData, index) => {
+                    {porto.map((portoData, index) => {
                         return (
                             <div key={index}
                                  className={"flex flex-row w-full justify-center flex-wrap rounded-lg border shadow-md my-4"}>
                                 <div className={"border-r w-full p-6 flex flex-row"}>
-                                    <div className="rounded-lg border shadow-md w-3/5 p-4 relative">
-                                        <Image src={projectData.image} alt={projectData.alt} fill
-                                               className={"object-cover rounded-lg"}/>
-                                    </div>
                                     <div className={"w-2/5 px-2 flex flex-col justify-center items-center"}>
                                         <div className={"flex flex-row justify-center items-center"}>
-                                            <h2 className={"mr-1"}>{projectData.tag}</h2>
+                                            <h2 className={"mr-1"}>{portoData.tag}</h2>
                                         </div>
-                                        <p>{projectData.desc}</p>
+                                        <p>{portoData.desc}</p>
 
                                         <div className={"flex flex-row"}>
-                                            {projectData.stack.map((value, index) => {
+                                            {portoData.stack.map((value, index) => {
                                                 return (
                                                     <strong key={index} className={"rounded-lg border p-2"}>
                                                         {value}
@@ -58,8 +46,12 @@ export default function Projects() {
                                                 )
                                             })}
                                         </div>
-                                        <Link href={projectData.redirect}>{projectData.redirtag}</Link>
-                                        <div>{projectData.repo}</div>
+                                        <Link href={portoData.redirect}>{portoData.redirtag}</Link>
+                                        <div>{portoData.repo}</div>
+                                    </div>
+                                    <div className="rounded-lg border shadow-md w-3/5 p-4 relative">
+                                        <Image src={portoData.image} alt={portoData.alt} fill
+                                               className={"object-cover rounded-lg"}/>
                                     </div>
                                 </div>
                             </div>
@@ -69,4 +61,5 @@ export default function Projects() {
             </div>
         </div>
     )
+
 }
