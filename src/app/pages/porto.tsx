@@ -9,7 +9,7 @@ export default function Porto() {
 
     const porto = [
         {
-            image: "/example_image1.png",
+            image: "/profileWeb.png",
             tag: "Profile Web",
             alt: "Profile Web",
             desc: "my online presence and the collection of personal information and activities shared on the internet",
@@ -22,7 +22,7 @@ export default function Porto() {
 
     return (
 
-        <div className="container py-16">
+        <div className="container py-4">
             <div className="flex flex-col w-full items-center justify-center">
                 <div className={"w-full lg:text-start text-center my-4"}>
                     <h3>Portfolio</h3>
@@ -49,14 +49,16 @@ export default function Porto() {
                                             )
                                         })}
                                     </div>
-                                    <Link href={portoData.repolink} className={"z-[1000]"}>
+                                    <Link href={portoData.repolink} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
                                         <p>{portoData.repo}<FontAwesomeIcon icon={faGithub} className={"pl-1"}/></p>
                                     </Link>
                                 </div>
                                 <div className="rounded-lg border shadow-md lg:w-3/5 w-full p-4 relative"
                                      style={{aspectRatio: 16 / 9}}>
-                                    <Image src={portoData.image} alt={portoData.alt} fill
-                                           className={"object-cover rounded-lg"}/>
+                                    <Link href={portoData.redirect}>
+                                        <Image src={portoData.image} alt={portoData.alt} fill
+                                               className={"object-contain rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-105"}/>
+                                    </Link>
                                 </div>
                             </div>
 

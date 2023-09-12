@@ -33,7 +33,7 @@ export default function Projects() {
 
     return (
         <div className="bg-[#f9f9f9]">
-            <div className="container">
+            <div className="container py-4">
                 <div className="flex flex-col w-full items-center justify-center py-4">
                     <div className={"w-full lg:text-start text-center mt-2"}>
                         <h3>Project</h3>
@@ -48,13 +48,13 @@ export default function Projects() {
                                          style={{aspectRatio: 16 / 9}}>
                                         <Link href={projectData.redirect}>
                                             <Image src={projectData.image} alt={projectData.alt} fill
-                                                   className={"object-cover rounded-lg"}/>
+                                                   className={"object-cover rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-105 "}/>
                                         </Link>
                                     </div>
                                     <div
                                         className={"lg:w-2/5 px-4 flex flex-col justify-center items-center text-center"}>
                                         <div className={"flex flex-col justify-center items-center my-2"}>
-                                            <h2 className={"mr-1 "}>{projectData.tag}</h2>
+                                            <Link href={projectData.redirect} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}><h2 className={"mr-1 "}>{projectData.tag}</h2></Link>
                                             <small>{projectData.note}</small>
                                             <p className={"pt-1"}>{projectData.desc}</p>
                                         </div>
@@ -68,11 +68,11 @@ export default function Projects() {
                                                 )
                                             })}
                                         </div>
-                                        <div className="pt-2 flex flex-row gap-x-3 w-full items-center justify-around">
-                                            <Link href={projectData.redirect}>
+                                        <div className="pt-2 flex flex-row gap-x-3 w-full items-center justify-around ">
+                                            <Link href={projectData.redirect} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
                                                 <p><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={"pr-1"}/>View Site</p>
                                             </Link>
-                                            <Link href={projectData.repolink}>
+                                            <Link href={projectData.repolink} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
                                                 <p>{projectData.repo}<FontAwesomeIcon icon={faGithub} className={"pl-1"}/></p>
                                             </Link>
                                         </div>

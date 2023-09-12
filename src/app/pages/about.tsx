@@ -13,7 +13,7 @@ export default function About() {
                             </div>
                         </div>
                         <div
-                            className={"md:w-3/5 w-full p-6 flex flex-col justify-center lg:items-start items-center text-center lg:items-start"}>
+                            className={"md:w-3/5 w-full p-6 flex flex-col justify-center items-center text-cemter lg:text-left lg:items-start"}>
                             <h3 className={""}>About me</h3>
                             <h2>Yonathan</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
