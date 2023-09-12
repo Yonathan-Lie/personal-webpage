@@ -1,3 +1,4 @@
+@import '@fortawesome/fontawesome-svg-core/styles.css';
 
 @tailwind base;
 @tailwind components;
@@ -5,10 +6,11 @@
 
 @layer base {
     .container {
-        @apply mx-auto lg:px-40 sm:px-4
+        @apply mx-auto lg:px-40 px-3
     }
+
     h1 {
-        @apply text-4xl font-bold
+        @apply text-5xl font-bold lg:text-start text-center
     }
 
     h2 {
@@ -16,6 +18,14 @@
     }
 
     h3 {
-        @apply text-xl font-medium
+        @apply text-xl font-semibold text-blue-600
+    }
+
+    p {
+        @apply text-lg
+    }
+
+    strong {
+        @apply text-lg
     }
 }
