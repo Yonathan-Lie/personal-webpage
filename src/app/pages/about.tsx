@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About() {
     return (
-        <div className="bg-[#fff]">
+        <div className="bg-[#fff]" id={"About"}>
             <div className="container h-screen">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <div className={"flex lg:flex-row flex-col w-full justify-center flex-wrap rounded-lg border shadow-lg"}>

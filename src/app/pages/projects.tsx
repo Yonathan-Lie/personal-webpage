@@ -32,7 +32,7 @@ export default function Projects() {
     ]
 
     return (
-        <div className="bg-[#f9f9f9]">
+        <div className="bg-[#f9f9f9]" id={"Project"}>
             <div className="container py-4">
                 <div className="flex flex-col w-full items-center justify-center py-4">
                     <div className={"w-full lg:text-start text-center mt-2"}>

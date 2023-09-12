@@ -31,7 +31,7 @@ export default function Hero() {
     ]
 
     return (
-        <div className="bg-[#f9f9f9]">
+        <div className="bg-[#f9f9f9]" id={"Home"}>
             <div className="container lg:py-36 pt-16">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <div

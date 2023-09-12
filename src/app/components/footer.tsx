@@ -12,13 +12,13 @@ export default function MyFooter() {
                         <p>Created, Developed and Designed by Yonathan </p>
                     </strong>
                     <div className={"text-inherit flex gap-x-3"}>
-                        <Link href={""}>
+                        <Link href={"https://www.linkedin.com/in/yonathan-l/"}>
                             <FontAwesomeIcon icon={faLinkedin} size={"xl"}/>
                         </Link>
-                        <Link href={""}>
+                        <Link href={"https://github.com/"}>
                             <FontAwesomeIcon icon={faGithub} size={"xl"}/>
                         </Link>
-                        <Link href={""}>
+                        <Link href={"https://www.instagram.com/yonathan.lie/"}>
                             <FontAwesomeIcon icon={faInstagram} size={"xl"}/>
                         </Link>
                     </div>

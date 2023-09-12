@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <div className="bg-[#f9f9f9] py-8">
+        <div className="bg-[#f9f9f9] py-8" id={"Contact"}>
             <div className="container">
                 <h3>Contact</h3>
                 <h2>Dont be shy! Contact me anytime!</h2>
