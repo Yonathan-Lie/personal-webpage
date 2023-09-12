@@ -44,10 +44,10 @@ export default function Hero() {
                                 Indonesia 📍
                             </p>
                             <div className={"flex flex-row gap-x-2"}>
-                                <Link href={"https://www.linkedin.com/in/yonathan-l/"}>
+                                <Link href={"https://www.linkedin.com/in/yonathan-l/"} className={"transition ease-in-out hover:-translate-y-1g hover:decoration-blue-600 hover:text-blue-600 hover:scale-105"}>
                                     <FontAwesomeIcon icon={faLinkedin} size={"2x"}/>
                                 </Link>
-                                <Link href={"https://github.com/Yonathan-Lie"}>
+                                <Link href={"https://github.com/Yonathan-Lie"} className={"transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:decoration-blue-600 hover:text-blue-600"}>
                                     <FontAwesomeIcon icon={faGithub} size={"2x"}/>
                                 </Link>
                             </div>
@@ -66,7 +66,7 @@ export default function Hero() {
                             <div className={"grid lg:grid-cols-4 grid-cols-2 lg:border-l  lg:ps-6 gap-4 grow lg:ms-8"}>
                                 {icons.map((iconData, index) => {
                                     return (
-                                        <div key={index} className={"flex flex-row gap-x-1 justify-center"}>
+                                        <div key={index} className={"flex flex-row gap-x-1 justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105"}>
                                             <Image src={iconData.src1} alt={iconData.alt1} height={50} width={50}/>
                                             <Image src={iconData.src2} alt={iconData.alt2} height={50} width={50}/>
                                         </div>
