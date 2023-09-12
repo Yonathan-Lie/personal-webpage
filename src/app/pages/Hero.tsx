@@ -31,23 +31,26 @@ export default function Hero() {
     ]
 
     return (
-        <div className="bg-[#f9f9f9]" id={"Home"}>
+        <section className="bg-[#f9f9f9]" id={"Home"}>
             <div className="container lg:py-36 pt-16">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <div
                         className={"flex lg:flex-row flex-col w-full justify-center items-center lg:items-start flex-wrap rounded-lg lg:border lg:shadow-lg "}>
                         <div
-                            className={"lg:w-3/5 w-full order-2 lg:order-1 lg:p-6 px-8 flex flex-col items-center lg:items-start "}>
+                            className={"lg:w-3/5 w-full order-2 lg:order-1 lg:p-6 px-8 flex flex-col items-center lg:items-start my-auto"}>
                             <h1 className={"pb-4"}>Front-End React Developer👋🏻</h1>
-                            <p className={"text-center lg:text-start pb-4"}>Hi, I&#39;m Yonathan. Physics graduate turned front-end developer with a passion for
+                            <p className={"text-center lg:text-start pb-4"}>Hi, I&#39;m Yonathan. Physics graduate
+                                turned front-end developer with a passion for
                                 creating beautiful and user-friendly web applications. Currently Based on Jakarta,
                                 Indonesia 📍
                             </p>
                             <div className={"flex flex-row gap-x-2"}>
-                                <Link href={"https://www.linkedin.com/in/yonathan-l/"} className={"transition ease-in-out hover:-translate-y-1g hover:decoration-blue-600 hover:text-blue-600 hover:scale-105"}>
+                                <Link href={"https://www.linkedin.com/in/yonathan-l/"}
+                                      className={"transition ease-in-out hover:-translate-y-1g hover:decoration-blue-600 hover:text-blue-600 hover:scale-105"}>
                                     <FontAwesomeIcon icon={faLinkedin} size={"2x"}/>
                                 </Link>
-                                <Link href={"https://github.com/Yonathan-Lie"} className={"transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:decoration-blue-600 hover:text-blue-600"}>
+                                <Link href={"https://github.com/Yonathan-Lie"}
+                                      className={"transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:decoration-blue-600 hover:text-blue-600"}>
                                     <FontAwesomeIcon icon={faGithub} size={"2x"}/>
                                 </Link>
                             </div>
@@ -66,7 +69,8 @@ export default function Hero() {
                             <div className={"grid lg:grid-cols-4 grid-cols-2 lg:border-l  lg:ps-6 gap-4 grow lg:ms-8"}>
                                 {icons.map((iconData, index) => {
                                     return (
-                                        <div key={index} className={"flex flex-row gap-x-1 justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105"}>
+                                        <div key={index}
+                                             className={"flex flex-row gap-x-1 justify-center transition ease-in-out hover:-translate-y-1 hover:scale-105"}>
                                             <Image src={iconData.src1} alt={iconData.alt1} height={50} width={50}/>
                                             <Image src={iconData.src2} alt={iconData.alt2} height={50} width={50}/>
                                         </div>
@@ -77,7 +81,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
     )
 }

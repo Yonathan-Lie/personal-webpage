@@ -4,16 +4,16 @@ import React from "react";
 export default function About() {
     return (
         <div className="bg-[#fff]" id={"About"}>
-            <div className="container h-screen">
+            <div className="container py-16">
                 <div className="flex flex-col w-full h-full items-center justify-center">
                     <div className={"flex lg:flex-row flex-col w-full justify-center flex-wrap rounded-lg border shadow-lg"}>
-                        <div className={"text-center md:w-2/5 w-full p-6 flex justify-center items-center"}>
+                        <div className={"text-center lg:w-2/5 w-full p-6 flex justify-center items-center"}>
                             <div className={"w-full relative object-contain"} style={{aspectRatio:16/9}}>
                                 <Image src={"/developer.jpg"} alt={""} fill className={"object-cover rounded-lg"}/>
                             </div>
                         </div>
                         <div
-                            className={"md:w-3/5 w-full p-6 flex flex-col justify-center items-center text-cemter lg:text-left lg:items-start"}>
+                            className={"lg:w-3/5 w-full p-6 flex flex-col justify-center items-center text-center lg:text-left lg:items-start"}>
                             <h3 className={""}>About me</h3>
                             <h2>Yonathan</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
 
@@ -14,8 +13,6 @@ export default function Projects() {
             tag: "Photomatics.id",
             desc: "Photomatics is a company that provides photo booth rental services, self-portrait studio, and automatic photo taking machines ",
             stack: ["NextJS", "Bootstrap"],
-            repo: "Code",
-            repolink: "https://github.com/",
             redirect: "https://photomatics.id/",
             note:""
         }, {
@@ -24,8 +21,6 @@ export default function Projects() {
             tag: "PULIH",
             desc: "Yayasan Pulih is a non-profit organization that provides psychosocial support to individuals and communities who have experienced trauma",
             stack: ["NextJS", "Bootstrap"],
-            repo: "Code",
-            repolink: "https://github.com/",
             redirect: "https://yayasan-pulih-v2.vercel.app/",
             note:"(work in progress)"
         },
@@ -71,9 +66,6 @@ export default function Projects() {
                                         <div className="pt-2 flex flex-row gap-x-3 w-full items-center justify-around ">
                                             <Link href={projectData.redirect} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
                                                 <p><FontAwesomeIcon icon={faArrowUpRightFromSquare} className={"pr-1"}/>View Site</p>
-                                            </Link>
-                                            <Link href={projectData.repolink} className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
-                                                <p>{projectData.repo}<FontAwesomeIcon icon={faGithub} className={"pl-1"}/></p>
                                             </Link>
                                         </div>
                                     </div>

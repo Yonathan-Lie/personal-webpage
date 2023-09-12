@@ -21,11 +21,11 @@ export default function MyNavbar() {
                         <li><Link href={"#Contact"}>Contact</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Yonathan.dev</a>
+                <Link href={"#Home"} className="btn btn-ghost normal-case text-xl">Yonathan.dev</Link>
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href={"#home"}>Home</Link></li>
+                    <li><Link href={"#Home"}>Home</Link></li>
                     <li><Link href={"#About"}>About</Link></li>
                     <li><Link href={"#Project"}>Project</Link></li>
                     <li><Link href={"#Portfolio"}>Portfolio</Link></li>
