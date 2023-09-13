@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
+import {faPlay} from "@fortawesome/free-solid-svg-icons";
 
 export default function Projects() {
 
@@ -14,7 +15,8 @@ export default function Projects() {
             desc: "Photomatics is a company that provides photo booth rental services, self-portrait studio, and automatic photo taking machines ",
             stack: ["NextJS", "Bootstrap"],
             redirect: "https://photomatics.id/",
-            note: ""
+            note: "",
+            redirectCode:"https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20I%20request%20live%20demo%20for%20photomatics%3F"
         }, {
             image: "/Pulih.png",
             alt: "Pulih",
@@ -22,7 +24,8 @@ export default function Projects() {
             desc: "Yayasan Pulih is a non-profit organization that provides psychosocial support to individuals and communities who have experienced trauma",
             stack: ["NextJS", "Bootstrap"],
             redirect: "https://yayasan-pulih-v2.vercel.app/",
-            note: "(work in progress)"
+            note: "(work in progress)",
+            redirectCode: "https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20i%20request%20live%20demo%20for%20Yayasan%20Pulih's%20Code%3F"
         },
     ]
 
@@ -72,6 +75,11 @@ export default function Projects() {
                                                       className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
                                                     <p><FontAwesomeIcon icon={faArrowUpRightFromSquare}
                                                                         className={"pr-1"}/>View Site</p>
+                                                </Link>
+                                                <Link href={projectData.redirectCode}
+                                                      className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
+                                                    <p><FontAwesomeIcon icon={faPlay}
+                                                                        className={"pr-1"}/>Req Code</p>
                                                 </Link>
                                             </div>
                                         </div>
