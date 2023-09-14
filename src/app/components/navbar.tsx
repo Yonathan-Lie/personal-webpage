@@ -17,7 +17,6 @@ export default function MyNavbar() {
                         <li><Link href={"#home"}>Home</Link></li>
                         <li><Link href={"#About"}>About</Link></li>
                         <li><Link href={"#Project"}>Project</Link></li>
-                        <li><Link href={"#Portfolio"}>Portfolio</Link></li>
                         <li><Link href={"#Contact"}>Contact</Link></li>
                     </ul>
                 </div>
@@ -28,7 +27,6 @@ export default function MyNavbar() {
                     <li><Link href={"#Home"}>Home</Link></li>
                     <li><Link href={"#About"}>About</Link></li>
                     <li><Link href={"#Project"}>Project</Link></li>
-                    <li><Link href={"#Portfolio"}>Portfolio</Link></li>
                     <li><Link href={"#Contact"}>Contact</Link></li>
                 </ul>
             </div>
