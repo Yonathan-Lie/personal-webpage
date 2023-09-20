@@ -4,7 +4,7 @@ import Projects from "@/app/pages/projects";
 import Contact from "@/app/pages/contact";
 import MyNavbar from "@/app/components/navbar";
 import MyFooter from "@/app/components/footer";
-import Porto from "@/app/pages/porto";
+// import Porto from "@/app/pages/porto";
 
 export default function Home() {
     return (
@@ -13,7 +13,7 @@ export default function Home() {
             <Hero/>
             <About/>
             <Projects/>
-            <Porto/>
+{/*             <Porto/> */}
             <Contact/>
             <MyFooter/>
         </>
