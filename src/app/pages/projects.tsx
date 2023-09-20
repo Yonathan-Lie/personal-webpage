@@ -37,7 +37,7 @@ export default function Projects() {
                     <div className="flex flex-col w-full items-center justify-center py-4">
                         <div className={"w-full lg:text-start text-center mt-2"}>
                             <h3>Project</h3>
-                            <h2>Things Done Professionally</h2>
+                            <h2>Where Things Done Professionally</h2>
                         </div>
                         {project.map((projectData, index) => {
                             return (
@@ -53,10 +53,10 @@ export default function Projects() {
                                         </div>
                                         <div
                                             className={"lg:w-2/5 px-4 flex flex-col my-auto justify-between h-full"}>
-                                            <div className="flex flex-row justify-between w-full">
+                                            <div className="flex sm:flex-row flex-col sm:justify-between justify-center items-center py-2 w-full">
                                                 <h2>{projectData.tag}</h2>
                                                 <div className={"my-auto"}>
-                                                    <p className={"bg-[#181a2a] text-white rounded-full align-middle px-2 text-sm"}>{projectData.note}</p>
+                                                    <p className={"bg-[#181a2a] text-white rounded-full align-middle text-center px-2"}>{projectData.note}</p>
                                                 </div>
                                             </div>
                                             <p>{projectData.desc}</p>

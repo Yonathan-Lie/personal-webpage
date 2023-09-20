@@ -10,7 +10,7 @@
     }
 
     h1 {
-        @apply text-5xl font-bold lg:text-start text-center
+        @apply sm:text-5xl text-4xl font-bold lg:text-start text-center
     }
 
     h2 {

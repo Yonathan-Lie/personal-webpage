@@ -63,9 +63,9 @@ export default function Hero() {
                             className={"flex lg:flex-row flex-col w-full justify-center items-center lg:items-start flex-wrap rounded-lg lg:border lg:shadow-lg "}>
                             <div
                                 className={"lg:w-3/5 w-full order-2 lg:order-1 lg:p-6 px-8 flex flex-col items-center lg:items-start my-auto"}>
-                                <div className={"h-28"}>
-                                    <h1 className={"pb-4"}>Hi There, I&#39;m a <br/><span ref={el}></span></h1>
-                                </div>
+                                    <h1 className={"h-32 sm:h-28 pb-4"}>Hi There, I&#39;m a<br/>
+                                        <span ref={el}></span>
+                                    </h1>
                                 <p className={"text-center lg:text-start pb-4"}>Hi, I&#39;m Yonathan. Physics graduate
                                     turned front-end developer with a passion for
                                     creating beautiful and user-friendly web applications. Currently Based on Jakarta,
