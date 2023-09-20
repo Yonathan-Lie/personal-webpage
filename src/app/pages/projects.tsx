@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
-import {faPlay} from "@fortawesome/free-solid-svg-icons";
+// import {faPlay} from "@fortawesome/free-solid-svg-icons";
+import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
 
@@ -15,8 +16,8 @@ export default function Projects() {
             desc: "Photomatics is a company that provides photo booth rental services, self-portrait studio, and automatic photo taking machines ",
             stack: ["NextJS", "Bootstrap"],
             redirect: "https://photomatics.id/",
-            note: "",
-            redirectCode:"https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20I%20request%20live%20demo%20for%20photomatics%3F"
+            note: "June 2023",
+            redirectCode: "https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20I%20request%20live%20demo%20for%20photomatics%3F"
         }, {
             image: "/Pulih.png",
             alt: "Pulih",
@@ -24,7 +25,7 @@ export default function Projects() {
             desc: "Yayasan Pulih is a non-profit organization that provides psychosocial support to individuals and communities who have experienced trauma",
             stack: ["NextJS", "Bootstrap"],
             redirect: "https://yayasan-pulih-v2.vercel.app/",
-            note: "(work in progress)",
+            note: "In-Progress",
             redirectCode: "https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20i%20request%20live%20demo%20for%20Yayasan%20Pulih's%20Code%3F"
         },
     ]
@@ -51,36 +52,41 @@ export default function Projects() {
                                             </Link>
                                         </div>
                                         <div
-                                            className={"lg:w-2/5 px-4 flex flex-col justify-center items-center text-center"}>
-                                            <div className={"flex flex-col justify-center items-center my-2"}>
-                                                <Link href={projectData.redirect}
-                                                      className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
-                                                    <h2 className={"mr-1 "}>{projectData.tag}</h2></Link>
-                                                <small>{projectData.note}</small>
-                                                <p className={"pt-1"}>{projectData.desc}</p>
+                                            className={"lg:w-2/5 px-4 flex flex-col my-auto justify-between h-full"}>
+                                            <div className="flex flex-row justify-between w-full">
+                                                <h2>{projectData.tag}</h2>
+                                                <div className={"my-auto"}>
+                                                    <p className={"bg-[#181a2a] text-white rounded-full align-middle px-2 text-sm"}>{projectData.note}</p>
+                                                </div>
                                             </div>
-
-                                            <div className={"flex flex-row"}>
-                                                {projectData.stack.map((value, index) => {
-                                                    return (
-                                                        <strong key={index} className={"mx-2 rounded-lg border p-2"}>
-                                                            {value}
-                                                        </strong>
-                                                    )
-                                                })}
-                                            </div>
-                                            <div
-                                                className="pt-2 flex flex-row gap-x-3 w-full items-center justify-around ">
-                                                <Link href={projectData.redirect}
-                                                      className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
-                                                    <p><FontAwesomeIcon icon={faArrowUpRightFromSquare}
-                                                                        className={"pr-1"}/>View Site</p>
-                                                </Link>
-                                                <Link href={projectData.redirectCode}
-                                                      className={"hover:underline hover:decoration-blue-600 hover:text-blue-600"}>
-                                                    <p><FontAwesomeIcon icon={faPlay}
-                                                                        className={"pr-1"}/>Req Code</p>
-                                                </Link>
+                                            <p>{projectData.desc}</p>
+                                            <div>
+                                                <div className={"flex flex-row w-100 mb-2"}>
+                                                    {projectData.stack.map((value, index) => {
+                                                        return (
+                                                            <div key={index}
+                                                                 className={"border rounded-lg p-2 mr-2"}>{value}</div>
+                                                        )
+                                                    })}
+                                                </div>
+                                                <div>
+                                                    <div className="grid grid-cols-2 justify-between ">
+                                                        <div>
+                                                            <Link href={projectData.redirect}>
+                                                                <p className={"text-white text-center rounded-lg bg-[#181a2a] flex items-center justify-center"}>
+                                                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare}
+                                                                                     className={"p-2"}/>View Site</p>
+                                                            </Link>
+                                                        </div>
+                                                        <div>
+                                                            <Link href={projectData.redirectCode}>
+                                                                <p className={"rounded-lg text-center flex items-center justify-center"}>
+                                                                    <FontAwesomeIcon icon={faWhatsapp}
+                                                                                     className={"p-2"}/>Req Code</p>
+                                                            </Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

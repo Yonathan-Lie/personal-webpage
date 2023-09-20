@@ -1,10 +1,33 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import {useEffect, useRef} from "react";
+import Typed from "typed.js"
 
 export default function Hero() {
+
+    const el = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ["Front-End Developer", "Programmer"],
+            startDelay: 300,
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 800,
+            loop: true,
+            fadeOut: true,
+            cursorChar: "",
+        });
+
+        return () => {
+            typed.destroy();
+        };
+    }, []);
 
     const icons = [
         {
@@ -39,7 +62,9 @@ export default function Hero() {
                             className={"flex lg:flex-row flex-col w-full justify-center items-center lg:items-start flex-wrap rounded-lg lg:border lg:shadow-lg "}>
                             <div
                                 className={"lg:w-3/5 w-full order-2 lg:order-1 lg:p-6 px-8 flex flex-col items-center lg:items-start my-auto"}>
-                                <h1 className={"pb-4"}>Front-End React Developer👋🏻</h1>
+                                <div className={"h-28"}>
+                                    <h1 className={"pb-4"}>Hi There, I&#39;m a <br/><span ref={el}></span></h1>
+                                </div>
                                 <p className={"text-center lg:text-start pb-4"}>Hi, I&#39;m Yonathan. Physics graduate
                                     turned front-end developer with a passion for
                                     creating beautiful and user-friendly web applications. Currently Based on Jakarta,

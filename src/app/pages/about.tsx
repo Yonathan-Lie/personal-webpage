@@ -15,7 +15,7 @@ export default function About() {
                                 </div>
                             </div>
                             <div
-                                className={"lg:w-3/5 w-full p-6 flex flex-col justify-center items-center text-center lg:text-left lg:items-start"}>
+                                className={"lg:w-3/5 w-full p-6 flex flex-col justify-center items-center text-center lg:items-start lg:text-justify"}>
                                 <h3 className={""}>About me</h3>
                                 <h2>Yonathan</h2>
                                 <p>As a physics graduate, I&#39;m equipped with a strong foundation in analytical
