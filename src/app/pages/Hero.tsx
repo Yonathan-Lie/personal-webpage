@@ -6,7 +6,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import {useEffect, useRef} from "react";
-import Typed from "typed.js"
+// @ts-ignore
+import Typed from "typed.js";
 
 export default function Hero() {
 

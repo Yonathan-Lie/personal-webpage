@@ -30,7 +30,6 @@ export default function MyNavbar() {
                     <li><Link href={"#Contact"}>Contact</Link></li>
                 </ul>
             </div>
-
         </div>
     )
 }
