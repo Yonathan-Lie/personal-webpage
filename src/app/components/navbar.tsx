@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MyNavbar() {
     return (
-        <div className="navbar bg-base-100 fixed z-[1000]">
+        <div className="navbar bg-base-100 fixed z-[1000] shadow" >
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

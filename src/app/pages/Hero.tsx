@@ -84,9 +84,7 @@ export default function Hero() {
                             </div>
                             <div
                                 className={"text-center lg:w-2/5 w-3/5 order-1 lg:order-2 p-6 flex justify-center items-center"}>
-                                <div className="aspect-square relative w-full border rounded-full">
-                                    <Image src={"/profile.jpeg"} alt={"profile photo"} fill
-                                           className={"object-cover rounded-full "} style={{}}/>
+                                <div id="heroImage" className="aspect-square relative w-full border rounded-full" style={{backgroundImage:"url(/profile.jpeg)", backgroundSize:"cover"}}>
                                 </div>
                             </div>
                             <div
