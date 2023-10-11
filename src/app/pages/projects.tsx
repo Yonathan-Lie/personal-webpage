@@ -24,7 +24,7 @@ export default function Projects() {
             tag: "PULIH",
             desc: "Yayasan Pulih is a non-profit organization that provides psychosocial support to individuals and communities who have experienced trauma",
             stack: ["NextJS", "Bootstrap"],
-            redirect: "https://yayasan-pulih-v2.vercel.app/",
+            redirect: "https://yayasanpulih.org/",
             note: "In-Progress",
             redirectCode: "https://wa.me/6289503965969?text=Hi%20Yonathan%2C%20Can%20i%20request%20live%20demo%20for%20Yayasan%20Pulih's%20Code%3F"
         },

@@ -15,7 +15,7 @@ export default function MyFooter() {
                         <Link href={"https://www.linkedin.com/in/yonathan-l/"}>
                             <FontAwesomeIcon icon={faLinkedin} size={"xl"}/>
                         </Link>
-                        <Link href={"https://github.com/"}>
+                        <Link href={"https://github.com/Yonathan-Lie"}>
                             <FontAwesomeIcon icon={faGithub} size={"xl"}/>
                         </Link>
                         <Link href={"https://www.instagram.com/yonathan.lie/"}>
